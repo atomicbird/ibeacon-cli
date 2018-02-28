@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F19EA042047150E00E19AF2 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F19EA032047150E00E19AF2 /* CoreBluetooth.framework */; };
 		B531297718CDF6D70061DC89 /* Broadcaster.m in Sources */ = {isa = PBXBuildFile; fileRef = B531297618CDF6D70061DC89 /* Broadcaster.m */; };
 		B591DC6718CDF0620059945B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B591DC6618CDF0620059945B /* Foundation.framework */; };
 		B591DC6A18CDF0620059945B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B591DC6918CDF0620059945B /* main.m */; };
@@ -30,6 +31,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1F19EA032047150E00E19AF2 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		B531297518CDF6D70061DC89 /* Broadcaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Broadcaster.h; sourceTree = "<group>"; };
 		B531297618CDF6D70061DC89 /* Broadcaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Broadcaster.m; sourceTree = "<group>"; };
 		B591DC6318CDF0620059945B /* ibeacon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ibeacon; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F19EA042047150E00E19AF2 /* CoreBluetooth.framework in Frameworks */,
 				B591DC7518CDF0BC0059945B /* IOBluetooth.framework in Frameworks */,
 				B591DC6718CDF0620059945B /* Foundation.framework in Frameworks */,
 			);
@@ -78,6 +81,7 @@
 		B591DC6518CDF0620059945B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F19EA032047150E00E19AF2 /* CoreBluetooth.framework */,
 				B591DC7418CDF0BC0059945B /* IOBluetooth.framework */,
 				B591DC6618CDF0620059945B /* Foundation.framework */,
 			);
@@ -260,6 +264,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ibeacon/ibeacon-Prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -269,6 +274,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ibeacon/ibeacon-Prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
